@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compradigital</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="fotos\logo.png" />    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand {
+            color: white;
+            font-weight: bold;
+        }
+        .navbar-brand:hover {
+            color: #d0d0d0;
+        }
+        .product-container {
+            margin-top: 50px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .product-image {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .product-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .product-description {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .price {
+            font-size: 1.5rem;
+            color: #28a745;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+            font-weight: bold;
+        }
+        .btn-whatsapp:hover {
+            background-color: #1db554;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">CompraDigital</a>
+        </div>
+    </nav>
+
+    <!-- Product Section -->
+    <div class="product-container text-center">
+        <img src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="Producto" class="product-image mb-4">
+        <h1 class="product-title">Título del Producto</h1>
+        <p class="price">$40.00</p>
+        <p class="product-description">Esta es la descripción del producto. Aquí puedes explicar sus características, beneficios y cualquier otra información relevante que quieras compartir con los clientes.</p>
+        <a href="https://wa.me/1234567890?text=Estoy%20interesado%20en%20su%20producto" target="_blank" class="btn btn-whatsapp btn-lg">Comprar Ahora en WhatsApp</a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

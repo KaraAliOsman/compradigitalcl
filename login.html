@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompraDigital - Iniciar Sesión</title>
+   
+        <link rel="icon" type="image/x-icon" href="fotos\logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/web.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Fondo de gradiente */
+        body {
+            background: linear-gradient(to right, #1cb5e0, #000851);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Contenedor de formulario */
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: rgb(128, 128, 128);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Título */
+        h2 {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        /* Inputs y botón */
+        .form-control {
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Enlaces */
+        a {
+            color: #007bff;
+            text-decoration: underline;
+        }
+
+        /* Icono de usuario */
+        .user-icon {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            font-size: 1rem;
+            color: #007bff;
+        }
+
+        /* Texto de bienvenida */
+        #userName {
+            margin-left: 0.5rem;
+            font-size: 0.9rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5" id="auth-container">
+        <div id="login-form" class="auth-form">
+            <h2 class="text-center">Iniciar Sesión</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="login-email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="login-email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="login-password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="login-password" required>
+                </div>
+                <button type="button" class="btn btn-primary w-100" onclick="login()">Iniciar Sesión</button>
+                <p class="text-center mt-3">¿No tienes una cuenta? <a href="#" onclick="toggleForm()" style="color:aqua;">Regístrate</a></p>
+            </form>
+        </div>
+
+        <div id="register-form" class="auth-form" style="display: none;">
+            <h2 class="text-center">Registro</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="register-email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="register-email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="register-password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="register-password" required>
+                </div>
+                <button type="button" class="btn btn-primary w-100" onclick="register()">Registrarse</button>
+                <p class="text-center mt-3">¿Ya tienes una cuenta? <a href="#" onclick="toggleForm()" style="color:aqua; ">Inicia Sesión</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Alternar entre formularios
+        function toggleForm() {
+            document.getElementById('login-form').style.display = 
+                document.getElementById('login-form').style.display === 'none' ? 'block' : 'none';
+            document.getElementById('register-form').style.display = 
+                document.getElementById('register-form').style.display === 'none' ? 'block' : 'none';
+        }
+
+        // Registro de usuario
+        function register() {
+            const email = document.getElementById('register-email').value;
+            const password = document.getElementById('register-password').value;
+
+            if (email && password) {
+                localStorage.setItem(email, password);
+                alert('¡Registro exitoso! Ahora puedes iniciar sesión.');
+                toggleForm();
+            } else {
+                alert('Por favor, completa todos los campos.');
+            }
+        }
+
+       // Inicio de sesión
+function login() {
+    const email = document.getElementById('login-email').value;
+    const password = document.getElementById('login-password').value;
+    const storedPassword = localStorage.getItem(email);
+
+    if (storedPassword === password) {
+        alert('Inicio de sesión exitoso');
+        
+        // Guardar el nombre de usuario en localStorage
+        localStorage.setItem('currentUser', email);
+        
+        // Redirigir a index.html
+        window.location.href = 'index.html';
+    } else {
+        alert('Correo o contraseña incorrectos');
+    }
+}
+    </script>
+</body>
+</html>
