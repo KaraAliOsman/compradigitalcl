@@ -1,0 +1,632 @@
+
+
+
+/* Título */
+h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Estilos generales para cada tarjeta */
+.hot-game-box-list-card {
+    padding: 20px;
+    border-radius: 15px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+    min-height: 350px; /* Asegura que todas las tarjetas tengan la misma altura mínima */
+}
+
+.hot-game-box-list-card:hover {
+    transform: scale(1.05);
+}
+
+/* Colores y degradados de cada sección */
+.hot-game-box-list-card-1 {
+    background: linear-gradient(135deg, #ffaf00, #ff6100);
+}
+
+.hot-game-box-list-card-2 {
+    background: linear-gradient(135deg, #8a2be2, #6a0dad);
+}
+
+.hot-game-box-list-card-3 {
+    background: linear-gradient(135deg, #1c1c3c, #333366);
+}
+
+.hot-game-box-list-card-4 {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+}
+
+/* Imagen superior */
+.icon-top img {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Título superior */
+.title-top {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Lista de juegos */
+.game-info-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    text-align: left;
+}
+
+.game-info-list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Enlace de "Ver más" */
+.more-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hot-game-box-list-card-1 .more-btn {
+    background-color: #ff6100;
+}
+
+.hot-game-box-list-card-2 .more-btn {
+    background-color: #6a0dad;
+}
+
+.hot-game-box-list-card-3 .more-btn {
+    background-color: #333366;
+}
+
+.hot-game-box-list-card-4 .more-btn {
+    background-color: #0056b3;
+}
+
+.more-btn:hover {
+    opacity: 0.8;
+}
+.login-button{
+    background-color:rgb(7, 167, 151);
+    color: #fff;
+    font-size: 14 px;
+    padding: 8px 20px;
+border-radius: 50px;
+text-decoration: none;
+transition: 0.3s background-color;
+}
+.login-button:hover{ background-color: blue;}
+
+
+  .carousel-item{max-height: 650PX;}
+
+.item img{max-height: 700px;}
+/* Hero image responsive */
+
+
+.login-button {
+    background-color: rgb(7, 167, 151);
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: blue;
+}
+
+
+
+ 
+       /* Barra de navegación */
+.navbar {
+    background: linear-gradient(to right, #12caf3, #0a9dbe);
+    height: 60.5px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Ajuste del logo y nombre del sitio */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+/* Ajuste del logo */
+.navbar-brand img {
+    border-radius: 5px;
+    height: 40px;
+    margin-right: 8px;
+}
+
+/* Centro de los elementos de navegación principales */
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botón de colapso */
+.navbar-toggler {
+    padding: 8px;
+}
+
+/* Ajuste de colapso para pantallas pequeñas */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: fixed; /* Mantiene el menú en posición fija */
+        top: 60.5px;
+        left: 0;
+        width: 100%;
+        background-color: #0a9dbe;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center; /* Centra el texto dentro del contenedor */
+    }
+
+    /* Alineación vertical de los elementos del menú */
+    .navbar-nav {
+        flex-direction: column; /* Alinea los enlaces verticalmente */
+    }
+
+    .nav-item {
+        margin: 5px 0; /* Espacio entre los elementos de navegación */
+    }
+
+    .navbar-brand {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px; /* Espacio alrededor del logo en pantallas pequeñas */
+        text-align: center;
+    }
+
+    /* Alinea el botón de colapso a la derecha */
+    .navbar-toggler {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        
+    }
+}
+
+
+.col-md-3.col-12.mb-4 .hot-game-box-list-card-1 a,
+.col-md-3.col-12.mb-4 .hot-game-box-list-card-2 a,
+.col-md-3.col-12.mb-4 .hot-game-box-list-card-3 a,
+.col-md-3.col-12.mb-4 .hot-game-box-list-card-4 a {
+    color: aliceblue;
+}
+.card-img-top {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 330px; /* Ajusta la altura a un tamaño fijo */
+    object-fit: cover; /* Asegura que la imagen se recorte adecuadamente */
+    border-radius: 30px 30px 0 0; /* Mantiene el mismo borde redondeado en la parte superior */
+}
+
+/* Configuración para pantallas grandes */
+@media (min-width: 992px) {
+    .navbar-collapse {
+        position: static;
+        background-color: transparent;
+    }
+}
+
+.why-choose-us-wrapper {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.big-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.why-info-box .info-box {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-info-box .info-box:hover {
+    transform: translateY(-10px);
+}
+
+.list-box-pic img {
+    margin-bottom: 15px;
+}
+
+.b-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.sm-text {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Ajustes responsive */
+@media (min-width: 768px) {
+    .big-title {
+        font-size: 2.5rem;
+    }
+    .why-info-box .info-box {
+        padding: 25px;
+    }
+}
+.why-info-box .row > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    height: 100%;
+}
+
+.why-info-box .list-box-txt {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.why-info-box .row > div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.why-info-box .row {
+    row-gap: 20px;
+}
+.step-guide-wrap {
+    background: linear-gradient(to right, #2c4a7a, #1d3661);
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+.step-guide-wrap .big-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.step-guide-wrap .list-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.step-guide-wrap .libox {
+    flex: 0 1 300px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.step-guide-wrap .libox img {
+    border-radius: 50%;
+    background-color: #ff5f4c;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+}
+.step-guide-wrap .libox h6{ font-size: 25px;}
+.step-guide-wrap .libox p {
+    font-size: 20px;
+    margin: 10px 0 0;
+    color: #cfd8e3;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .step-guide-wrap .list-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .step-guide-wrap .list-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .step-guide-wrap .libox {
+        max-width: 100%;
+    }
+}
+
+.container, .container-fluid, .container.full-width-background {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px; /* Ajuste opcional */
+}
+.faq-container {
+    
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.faq-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+details {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+}
+summary::-webkit-details-marker {
+    display: none;
+}
+details[open] summary {
+    color: #007bff;
+}
+details p {
+    margin: 10px 0 0;
+    font-size: 16px;
+}
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    font-size: 16px;
+}
+.panel p {
+    margin: 10px 0;
+}
+.footer {
+    background-color: rgb(255, 65, 48);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Footer content wrapper */
+.footer__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer description */
+.footer__description {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* Footer links styling */
+.footer__links {
+    margin: 5px 0;
+}
+
+.footer__links a {
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: color 200ms;
+}
+
+.footer__links a:hover {
+    color: #ffcccb;
+}
+
+/* Social icons */
+.footer__social a img {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    filter: brightness(0) invert(1);
+    transition: transform 200ms ease;
+}
+
+.footer__social a:hover img {
+    transform: scale(1.1);
+}
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px 0px;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+}
+.btn-primary:hover{
+    background-color: black;
+    border: none;
+}
+/* Contenedor principal */
+
+
+/* Otros estilos de tus elementos dentro de .container */
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.user-icon {
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   font-size: 1rem;
+}
+
+#userName {
+   margin-left: 0.5rem;
+   font-size: 0.9rem;
+}
+
+
+.main {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #00bcd4, #009688); /* Degradado turquesa */
+    border-radius: 20px;
+    box-shadow: 0px 20px 23px 5px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+    position: relative;
+    line-height: 3em;
+}
+
+.header span {
+    color: green;
+    font-weight: bold;
+}
+
+.content .loader {
+    color: #ebebeb;    
+    font-size: 15px;
+    padding: 8px 12px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    animation: play 2s;
+}
+
+@keyframes play {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        transition: 2s ease-in;
+        width: calc(100/10);
+        opacity: 1;
+    }
+}
+
+.content .first {
+    height: 40px;
+    width: 90%;
+    background-color: darkcyan;
+}
+
+.content .second {
+    height: 40px;
+    width: 40%;
+    background-color: orange;
+}
+
+.content .third {
+    height: 40px;
+    width: 60%;
+    background-color: brown;
+}
+
+.loader span {
+    color: #ebebeb;
+    display: block;
+    float: right;
+    font-weight: bold;
+}
+
+.footer {
+    padding: 20px 0;
+}
+
+.footer span {
+    letter-spacing: .19em;
+}
+
+
+
+.card {
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: #40E0D0; /* Color turquesa */
+}
+
+.why-info-box {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .list-box-pic img {
+    width: 80px;
+    transition: transform 0.3s ease;
+  }
+  
+  .list-box-pic img:hover {
+    transform: scale(1.1);
+  }
+  
+  .list-box-txt {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .list-box-txt:hover {
+    background-color: #e9ecef;
+  }
+  
+  .b-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #007bff;
+  }
+  
+  .sm-text {
+    color: #6c757d;
+    font-size: 0.95rem;
+  }
